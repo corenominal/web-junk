@@ -9,3 +9,36 @@
 * More info: https://github.com/corenominal/web-junk 
 */
 
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background: #fff;
+	font-family: 'inconsolatamedium';
+}
+
+.junk-page {
+	position: relative;
+	height: 100%;
+}
+
+.junk-info {
+	background: #111414;
+	color: #fff;
+	font-family: 'inconsolatamedium';
+	position: fixed;
+	padding: 20px;
+	bottom: 20px;
+	right: 20px;
+	width: 200px;
+}
+
+.junk-info h2 {
+	margin-bottom: 6px;
+}
+
+.junk-info a {
+	color: #fff;
+	text-decoration: none;
+}

@@ -10,5 +10,5 @@
 */
 $(document).ready(function()
 {
-	alert('foo');
+	console.log( 'foo' );
 });
