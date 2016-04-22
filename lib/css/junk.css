@@ -11,11 +11,12 @@
 
 html {
 	overflow-y: scroll;
+	height: 100%;
 }
 
 body {
-	background: #fff;
 	font-family: 'inconsolatamedium';
+	height: 100%;
 }
 
 .junk-page {
@@ -23,9 +24,15 @@ body {
 	height: 100%;
 }
 
-.junk-info {
+.junk-page-default {
+	background: #fff;
+}
+
+.junk-page-inverted {
 	background: #111;
-	color: #fff;
+}
+
+.junk-info {
 	font-family: 'inconsolatamedium';
 	position: fixed;
 	padding: 20px;
@@ -34,11 +41,28 @@ body {
 	width: 200px;
 }
 
+.junk-info-default {
+	background: #111;
+	color: #fff;
+}
+
+.junk-info-inverted {
+	background: #fff;
+	color: #111;
+}
+
 .junk-info h2 {
 	margin-bottom: 6px;
 }
 
 .junk-info a {
-	color: #fff;
 	text-decoration: none;
+}
+
+.junk-info-default a {
+	color: #fff;
+}
+
+.junk-info-inverted a {
+	color: #111;
 }
