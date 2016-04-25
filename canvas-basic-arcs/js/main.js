@@ -8,6 +8,7 @@
 * by @corenominal
 * More info: https://github.com/corenominal/web-junk 
 */
+
 $(document).ready(function()
 {
 	var PI = Math.PI;
@@ -72,11 +73,5 @@ $(document).ready(function()
 			drawArcs();
 		}               
 	}
-
-	// Load JS for viewing
-	$('#code').load('js/main.js', function( data ){
-		$('#code').value( data );
-	});
-
 
 });

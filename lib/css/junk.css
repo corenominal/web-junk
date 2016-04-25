@@ -22,7 +22,6 @@ body {
 }
 
 .junk-page {
-	position: relative;
 	height: 100%;
 }
 
@@ -38,7 +37,7 @@ body {
 	font-family: 'inconsolatamedium';
 	position: fixed;
 	padding: 20px;
-	bottom: 20px;
+	top: 20px;
 	right: 20px;
 	width: 200px;
 }
@@ -67,4 +66,44 @@ body {
 
 .junk-info-inverted a {
 	color: #111;
+}
+
+.junk-info ul {
+	margin-top: 10px;
+}
+
+.junk-info ul li {
+	display:inline-block;
+}
+
+.junk-info ul li a {
+	padding:0 20px 0 0;
+}
+
+.code-close {
+	position:fixed;
+	top: 22px;
+	left: 22px;
+	padding: 10px;
+	background: #111;
+	color: #fff;
+	cursor: pointer;
+}
+
+.code {
+	font-family: 'inconsolatamedium';
+	position: fixed;
+	background: #fff;
+	color: #111;
+	padding: 40px 20px 20px 20px;
+	top: 20px;
+	left: 20px;
+	width: calc( 100% - 100px );
+	height: calc( 100% - 120px );
+	max-height: calc( 100% - 120px );
+	overflow: scroll;
+	border: 10px solid #111;
+	white-space: pre;
+    word-wrap: normal;
+    overflow-x: scroll;
 }
