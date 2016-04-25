@@ -23,14 +23,20 @@ $(document).ready(function()
 		var canvas = document.getElementById( 'canvas' );
 		var c = canvas.getContext('2d');
 
+		var boundry = canvasWidth;
+		if( canvasHeight > canvasWidth )
+		{
+			boundry = canvasHeight;
+		}
+
 		// Initial fill
 		c.fillStyle = 'rgba( 255, 255, 255, 1 )';
 		c.fillRect( 0, 0, canvasWidth, canvasHeight );
 
-		for ( var i = 1; i < canvasWidth; i++ )
+		for ( var i = 1; (radius * i) < boundry; i++ )
 		{
 			c.beginPath();
-			// c.arc(x position, y position , radius , start angle , end angle, counterclockwise);
+			// c.arc(x position, y position, radius, start angle, end angle, counterclockwise);
 			c.arc( canvasWidth / 2, canvasHeight / 2, radius * i, 0, 2 * PI, false );
 			c.strokeStyle="#111111";
 			c.lineWidth=4;
@@ -66,6 +72,11 @@ $(document).ready(function()
 			drawArcs();
 		}               
 	}
+
+	// Load JS for viewing
+	$('#code').load('js/main.js', function( data ){
+		$('#code').value( data );
+	});
 
 
 });
