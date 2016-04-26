@@ -105,6 +105,11 @@ body {
 	overflow: scroll;
 	border: 10px solid #111;
 	white-space: pre;
-    word-wrap: normal;
-    overflow-x: scroll;
+	word-wrap: normal;
+	overflow-x: scroll;
+}
+
+.code:focus {
+	outline-color: transparent;
+	outline-style: none;
 }
