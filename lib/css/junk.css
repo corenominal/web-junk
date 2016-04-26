@@ -85,17 +85,24 @@ body {
 	top: 22px;
 	left: 22px;
 	padding: 10px;
+
+	cursor: pointer;
+}
+
+.code-close-default {
 	background: #111;
 	color: #fff;
-	cursor: pointer;
+}
+
+.code-close-inverted {
+	background: #fff;
+	color: #111;
 }
 
 .code {
 	font-family: 'inconsolatamedium';
 	font-size: 1em;
 	position: fixed;
-	background: #fff;
-	color: #111;
 	padding: 40px 20px 20px 20px;
 	top: 20px;
 	left: 20px;
@@ -103,10 +110,21 @@ body {
 	height: calc( 100% - 120px );
 	max-height: calc( 100% - 120px );
 	overflow: scroll;
-	border: 10px solid #111;
 	white-space: pre;
 	word-wrap: normal;
 	overflow-x: scroll;
+}
+
+.code-default {
+	background: #fff;
+	color: #111;
+	border: 10px solid #111;
+}
+
+.code-inverted {
+	background: #111;
+	color: #fff;
+	border: 10px solid #fff;
 }
 
 .code:focus {
