@@ -85,7 +85,7 @@ body {
 	top: 22px;
 	left: 22px;
 	padding: 10px;
-
+	display:none;
 	cursor: pointer;
 }
 
