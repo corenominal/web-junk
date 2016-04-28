@@ -10,4 +10,4 @@ It's not advised to load the HTML file locally, instead, load them from a web se
 
 2. If running locally in Chrome, you'll need to start Chrome with the '--allow-file-access-from-files' argument. On OS X, the start command is:
 
-    open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files
+`open /Applications/Google\ Chrome.app/ --args --allow-file-access-from-files`
