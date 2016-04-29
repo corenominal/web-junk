@@ -1,5 +1,7 @@
 # Web Junk
 
+![web junk](https://corenominal.org/wp-content/uploads/2016/04/dustbin.png "Web Junk")
+
 A repository for experimenting with and storing my random web junk.
 
 ### Usage notes
