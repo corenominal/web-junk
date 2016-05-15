@@ -36,7 +36,7 @@ body {
 .junk-info {
 	font-family: 'inconsolatamedium';
 	position: fixed;
-	padding: 20px;
+	padding: 10px 20px 10px 20px;
 	top: 21px;
 	right: 20px;
 	width: 200px;
@@ -53,7 +53,7 @@ body {
 }
 
 .junk-info h2 {
-	margin-bottom: 6px;
+	margin: 10px 0px 4px 0px;
 }
 
 .junk-info a {
