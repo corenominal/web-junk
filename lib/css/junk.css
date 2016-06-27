@@ -6,7 +6,7 @@
 *   \_/\_/ \___|_.__/     _/ |\__,_|_| |_|_|\_\
 *                        |__/
 * by @corenominal
-* More info: https://github.com/corenominal/web-junk 
+* More info: https://github.com/corenominal/web-junk
 */
 
 html {
@@ -30,7 +30,7 @@ body {
 }
 
 .junk-page-inverted {
-	background: #111;
+	background: #1c1c1c;
 }
 
 .junk-info {
@@ -43,13 +43,13 @@ body {
 }
 
 .junk-info-default {
-	background: #111;
+	background: #1c1c1c;
 	color: #fff;
 }
 
 .junk-info-inverted {
 	background: #fff;
-	color: #111;
+	color: #1c1c1c;
 }
 
 .junk-info h2 {
@@ -65,7 +65,7 @@ body {
 }
 
 .junk-info-inverted a {
-	color: #111;
+	color: #1c1c1c;
 }
 
 .junk-info ul {
@@ -90,13 +90,13 @@ body {
 }
 
 .code-close-default {
-	background: #111;
+	background: #1c1c1c;
 	color: #fff;
 }
 
 .code-close-inverted {
 	background: #fff;
-	color: #111;
+	color: #1c1c1c;
 }
 
 .code {
@@ -117,12 +117,12 @@ body {
 
 .code-default {
 	background: #fff;
-	color: #111;
-	border: 10px solid #111;
+	color: #1c1c1c;
+	border: 10px solid #1c1c1c;
 }
 
 .code-inverted {
-	background: #111;
+	background: #1c1c1c;
 	color: #fff;
 	border: 10px solid #fff;
 }
