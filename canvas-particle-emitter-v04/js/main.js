@@ -6,7 +6,7 @@
 *   \_/\_/ \___|_.__/     _/ |\__,_|_| |_|_|\_\
 *                        |__/
 * by @corenominal
-* More info: https://github.com/corenominal/web-junk 
+* More info: https://github.com/corenominal/web-junk
 */
 
 $(document).ready(function()
@@ -26,7 +26,7 @@ $(document).ready(function()
 	var maxParticleSize = 5;
 
 	// Initial fill
-	c.fillStyle = 'rgba( 17, 17, 17, 1 )';
+	c.fillStyle = 'rgba( 33, 33, 33, 1 )';
 	c.fillRect( 0, 0, canvasWidth, canvasHeight );
 
 	function particle()
@@ -50,7 +50,7 @@ $(document).ready(function()
 		// Update the particles
 		for (i = 0; i < particles.length; i++)
 		{
-			
+
 			particles[i].x += particles[i].vx;
 			particles[i].y += particles[i].vy;
 
@@ -70,7 +70,7 @@ $(document).ready(function()
 				particles.splice(i, 1);
 			}
 		}
-		
+
 		// Create new particles
 		while ( particles.length < noOfParticles )
 		{
@@ -80,9 +80,9 @@ $(document).ready(function()
 
 	function renderer()
 	{
-		c.fillStyle = 'rgba( 0, 0, 0, 0.4 )';
+		c.fillStyle = 'rgba( 33, 33, 33, 0.4 )';
 		c.fillRect( 0, 0, canvasWidth, canvasHeight );
-		
+
 		for (i = 0; i < particles.length; i++)
 		{
 			if( particles[i].life < 50 )

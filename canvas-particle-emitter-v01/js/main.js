@@ -6,7 +6,7 @@
 *   \_/\_/ \___|_.__/     _/ |\__,_|_| |_|_|\_\
 *                        |__/
 * by @corenominal
-* More info: https://github.com/corenominal/web-junk 
+* More info: https://github.com/corenominal/web-junk
 */
 
 $(document).ready(function()
@@ -59,7 +59,7 @@ $(document).ready(function()
 				particles.splice(i, 1);
 			}
 		}
-		
+
 		// Create new particles
 		while ( particles.length < noOfParticles )
 		{
@@ -71,10 +71,10 @@ $(document).ready(function()
 	{
 		c.fillStyle = 'rgba( 255, 255, 255, 0.6 )';
 		c.fillRect( 0, 0, canvasWidth, canvasHeight );
-		
+
 		for (i = 0; i < particles.length; i++)
 		{
-			c.fillStyle = 'rgba(17,17,17, 1)';
+			c.fillStyle = 'rgba(33,33,33, 1)';
 			c.fillRect(particles[i].x,particles[i].y,particles[i].size,particles[i].size);
 		}
 	}

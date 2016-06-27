@@ -6,7 +6,7 @@
 *   \_/\_/ \___|_.__/     _/ |\__,_|_| |_|_|\_\
 *                        |__/
 * by @corenominal
-* More info: https://github.com/corenominal/web-junk 
+* More info: https://github.com/corenominal/web-junk
 */
 
 $(document).ready(function()
@@ -49,7 +49,7 @@ $(document).ready(function()
 		// Update the particles
 		for (i = 0; i < particles.length; i++)
 		{
-			
+
 			particles[i].x += particles[i].vx;
 			particles[i].y += particles[i].vy;
 
@@ -68,7 +68,7 @@ $(document).ready(function()
 				particles.splice(i, 1);
 			}
 		}
-		
+
 		// Create new particles
 		while ( particles.length < noOfParticles )
 		{
@@ -80,22 +80,22 @@ $(document).ready(function()
 	{
 		c.fillStyle = 'rgba( 255, 255, 255, 0.1 )';
 		c.fillRect( 0, 0, canvasWidth, canvasHeight );
-		
+
 		for (i = 0; i < particles.length; i++)
 		{
 			c.beginPath();
-			
+
 			c.shadowBlur = 150;
-			c.shadowColor = 'rgba( 17, 17, 17, 0.8 )';
+			c.shadowColor = 'rgba( 33, 33, 33, 0.8 )';
 
 			var grd=c.createRadialGradient( particles[i].x, particles[i].y, 1, particles[i].x, particles[i].y, particles[i].size / 2.2);
-			grd.addColorStop( 0, 'rgba( 17, 17, 17, 1 )' );
-			grd.addColorStop( 1, 'rgba( 17, 17, 17, 0 )' );			
+			grd.addColorStop( 0, 'rgba( 33, 33, 33, 1 )' );
+			grd.addColorStop( 1, 'rgba( 33, 33, 33, 0 )' );			
 
 			c.fillStyle = grd;
 			c.arc( particles[i].x, particles[i].y, particles[i].size / 2, 0, 2*PI );
 			c.fill();
-			
+
 			c.shadowBlur = 0;
 		}
 

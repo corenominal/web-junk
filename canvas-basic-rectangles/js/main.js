@@ -6,7 +6,7 @@
 *   \_/\_/ \___|_.__/     _/ |\__,_|_| |_|_|\_\
 *                        |__/
 * by @corenominal
-* More info: https://github.com/corenominal/web-junk 
+* More info: https://github.com/corenominal/web-junk
 */
 $(document).ready(function()
 {
@@ -37,14 +37,14 @@ $(document).ready(function()
 			x = (canvasWidth / 2) - ((size * i) / 2);
 			y = (canvasHeight / 2) - ((size * i) / 2);
 
-			c.strokeStyle="#111111";
+			c.strokeStyle="#212121";
 			c.lineWidth=4;
 			//c.strokeRect( x position, y position, width, height );
 			c.strokeRect( x, y, size * i, size * i );
 
 		}
 	}
-	
+
 	drawRectangles();
 
 	// Redraw on window resize
@@ -71,7 +71,7 @@ $(document).ready(function()
 		{
 			timeout = false;
 			drawRectangles();
-		}               
+		}
 	}
 
 });

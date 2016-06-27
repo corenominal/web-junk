@@ -6,7 +6,7 @@
 *   \_/\_/ \___|_.__/     _/ |\__,_|_| |_|_|\_\
 *                        |__/
 * by @corenominal
-* More info: https://github.com/corenominal/web-junk 
+* More info: https://github.com/corenominal/web-junk
 */
 
 $(document).ready(function()
@@ -41,7 +41,7 @@ $(document).ready(function()
 			vy = Math.random() * 6 - 12,
 			energy = vy / 1.2,
 			size = particleSize,
-			colour = 'rgba( 17, 17, 17, 0.' + Math.floor((Math.random() * 5) + 3) + ' )',
+			colour = 'rgba( 33, 33, 33, 0.' + Math.floor((Math.random() * 5) + 3) + ' )',
 			life = 0,
 			death = Math.random() * 300 + 10;
 
@@ -53,7 +53,7 @@ $(document).ready(function()
 		// Update the particles
 		for (i = 0; i < particles.length; i++)
 		{
-			
+
 			particles[i].x += particles[i].vx;
 			particles[i].y += particles[i].vy;
 
@@ -79,7 +79,7 @@ $(document).ready(function()
 				particles.splice(i, 1);
 			}
 		}
-		
+
 		// Create new particles
 		while ( particles.length < noOfParticles )
 		{
@@ -91,13 +91,13 @@ $(document).ready(function()
 	{
 		c.fillStyle = 'rgba( 255, 255, 255, 0.4 )';
 		c.fillRect( 0, 0, canvasWidth, canvasHeight );
-		
+
 		for (i = 0; i < particles.length; i++)
 		{
 			c.fillStyle = particles[i].colour;
 			if( particles[i].life < 2 )
 			{
-				c.fillStyle = 'rgba( 17, 17, 17, 0 )';
+				c.fillStyle = 'rgba( 33, 33, 33, 0 )';
 			}
 			c.beginPath();
 			c.arc( particles[i].x, particles[i].y, particles[i].size / 2, 0, 2*PI );
