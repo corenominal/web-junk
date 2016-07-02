@@ -94,7 +94,20 @@ $(document).ready(function()
 
 	}
 
-	doTheStripyWipy();
-	hello.play();
+	function init()
+	{
+		$( '#man-on-a-rock' ).fadeIn(500, function()
+		{
+			doTheStripyWipy();
+			hello.play();
+		});
+	}
+
+	// Delay the start
+	setTimeout(function()
+	{
+		init();
+	}, 3000);
+
 
 });
