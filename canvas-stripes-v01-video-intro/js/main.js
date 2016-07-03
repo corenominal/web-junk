@@ -35,7 +35,7 @@ $(document).ready(function()
 		var x = 0;
 		var y = 0;
 		var stripes = [];
-		var completed = 0;
+		var finished = false;
 
 		function setupStripes()
 		{
@@ -51,23 +51,18 @@ $(document).ready(function()
 
 		function updateStripes()
 		{
-			for ( i = 0; i < stripes.length; i++ )
+			l = stripes.length;
+			for ( i = 0; i < l; i++ )
 			{
-				if( stripes[ i ].y < h )
-				{
-					stripes[ i ].y += stripes[ i ].v;
-				}
-				else
-				{
-					completed++;
-				}
+				stripes[ i ].y += stripes[ i ].v;
 			}
 		}
 
 		function drawStripes()
 		{
 
-			for ( i = 0; i < stripes.length; i++ )
+			l = stripes.length;
+			for ( i = 0; i < l; i++ )
 			{
 				c.strokeStyle = 'rgba( 255, 255, 255, 1 )';
 				c.lineWidth = stripes[i].w;
@@ -76,17 +71,25 @@ $(document).ready(function()
 				c.lineTo(stripes[i].x, stripes[i].y);
 				c.stroke();
 			}
-			if( completed < stripes.length )
+			finished = true;
+			for ( i = 0; i < l; i++ )
 			{
-				return;
+				if( stripes[ i ].y < h )
+				{
+					finished = false;
+				}
 			}
 		}
 
 		function main()
 		{
-			updateStripes();
-			drawStripes();
-			requestAnimationFrame(main);
+			console.log( finished );
+			if ( !finished )
+			{
+				updateStripes();
+				drawStripes();
+				requestAnimationFrame(main);
+			}
 		}
 
 		setupStripes();
