@@ -38,6 +38,11 @@ $(document).ready(function()
 		{
 			urls: ['./sfx/explosion.mp3', './sfx/explosion.ogg']
 		});
+		var goodbyeSFX = new Howl(
+		{
+			urls: ['./sfx/goodbye.mp3', './sfx/goodbye.ogg']
+		});
+
 
 		var timeline = 0;
 
@@ -257,7 +262,10 @@ $(document).ready(function()
 				else
 				{
 					fini = true;
-					$( '.container-content' ).fadeIn(500);
+					$( '.container-content' ).fadeIn(500,function()
+					{
+						goodbyeSFX.play();
+					});
 				}
 			}
 			renderer();
