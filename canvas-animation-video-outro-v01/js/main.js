@@ -42,6 +42,10 @@ $(document).ready(function()
 		{
 			urls: ['./sfx/goodbye.mp3', './sfx/goodbye.ogg']
 		});
+		var deathstarSFX = new Howl(
+		{
+			urls: ['./sfx/deathstar.mp3', './sfx/deathstar.ogg']
+		});
 
 
 		var timeline = 0;
@@ -58,6 +62,7 @@ $(document).ready(function()
 		var lazerDuration = 0;
 		var lazerDurationStart = 0;
 		var readyToFire = false;
+		var deathstarStarted = false;
 		var deathstar = new Image();
 		deathstar.src = './img/deathstar.png';
 		var deathstarY = 100;
@@ -252,6 +257,11 @@ $(document).ready(function()
 			if( timeline > 100 )
 			{
 				deathstarEngine();
+				if( !deathstarStarted )
+				{
+					deathstarSFX.play();
+					deathstarStarted = true;
+				}
 			}
 			if( debrisCreated )
 			{
