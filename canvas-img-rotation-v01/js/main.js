@@ -111,6 +111,6 @@ $(document).ready(function()
 	setTimeout(function()
 	{
 		init();
-	}, 1500);
+	}, 3000);
 
 });
