@@ -21,6 +21,10 @@ body {
 	-moz-osx-font-smoothing:grayscale;*/
 }
 
+body.no-cursor {
+	cursor: none;
+}
+
 .junk-page {
 	height: 100%;
 }
