@@ -6,11 +6,11 @@
 *   \_/\_/ \___|_.__/     _/ |\__,_|_| |_|_|\_\
 *                        |__/
 * by @corenominal
-* More info: https://github.com/corenominal/web-junk 
+* More info: https://github.com/corenominal/web-junk
 */
 $(document).ready(function()
 {
-	
+
 	// Cross-browser support for requestAnimationFrame
 	var requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.mozRequestAnimationFrame;
 
@@ -26,7 +26,7 @@ $(document).ready(function()
 	var noOfStars = 80;
 
 	// Initial fill
-	c.fillStyle = 'rgba( 255, 255, 255, 1 )';
+	c.fillStyle = 'rgba( 33, 33, 33, 1 )';
 	c.fillRect( 0, 0, canvasWidth, canvasHeight );
 
 	// Images
@@ -45,9 +45,9 @@ $(document).ready(function()
 			size = ( Math.floor( ( Math.random() * 3 ) + 1 ) ) * 5,
 			life = 0,
 			death = Math.random() * 500 + 10;
-		
+
 		// Collision Detection - avoid start hitting the logo
-		while ( 
+		while (
 				( x >= ( canvasWidth/2 ) - 150 && x <= ( canvasWidth/2 ) + 150 )
 				&&
 				( y >= ( canvasHeight/2 ) - 150 && y <= ( canvasHeight/2 ) + 150 )
@@ -64,7 +64,7 @@ $(document).ready(function()
 	// Star emitter
 	function starEmitter()
 	{
-		
+
 		// Remove dead stars
 		for (i = 0; i < stars.length; i++)
 		{
@@ -87,7 +87,7 @@ $(document).ready(function()
 	function renderer()
 	{
 		// Clear the canvas
-		c.fillStyle = 'rgba( 255, 255, 255, 1 )';
+		c.fillStyle = 'rgba( 33, 33, 33, 1 )';
 		c.fillRect( 0, 0, canvasWidth, canvasHeight );
 
 		// Draw stars
