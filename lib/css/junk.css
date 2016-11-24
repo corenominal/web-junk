@@ -15,7 +15,7 @@ html {
 }
 
 body {
-	font-family: 'Share Tech Mono';
+	font-family: 'Roboto Mono';
 	height: 100%;
 	/*-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;*/
@@ -38,7 +38,7 @@ body.no-cursor {
 }
 
 .junk-info {
-	font-family: 'Share Tech Mono';
+	font-family: 'Roboto Mono';
 	position: fixed;
 	padding: 10px 20px 10px 20px;
 	top: 21px;
@@ -104,7 +104,7 @@ body.no-cursor {
 }
 
 .code {
-	font-family: 'Share Tech Mono';
+	font-family: 'Roboto Mono';
 	font-size: 1em;
 	position: fixed;
 	padding: 40px 20px 20px 20px;
