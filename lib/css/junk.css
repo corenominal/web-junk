@@ -15,10 +15,9 @@ html {
 }
 
 body {
-	font-family: 'Roboto Mono';
+	font-family: Consolas, Menlo, "Noto Mono", "DejaVu Sans Mono", monospace;
+	font-size: 13px;
 	height: 100%;
-	/*-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;*/
 }
 
 body.no-cursor {
@@ -34,30 +33,52 @@ body.no-cursor {
 }
 
 .junk-page-inverted {
-	background: #1c1c1c;
+	background: #2d2d2d;
 }
 
 .junk-info {
-	font-family: 'Roboto Mono';
 	position: fixed;
 	padding: 10px 20px 10px 20px;
 	top: 21px;
-	right: 20px;
+	left: 20px;
 	width: 200px;
 }
 
+.junk-info .corenominal {
+	max-width: 48px;
+	height: auto;
+}
+
 .junk-info-default {
-	background: #1c1c1c;
+	background: #2d2d2d;
 	color: #fff;
 }
 
 .junk-info-inverted {
 	background: #fff;
-	color: #1c1c1c;
+	color: #2d2d2d;
 }
 
 .junk-info h2 {
+	font-size: 13px;
 	margin: 10px 0px 4px 0px;
+	display: inline-block;
+}
+
+.junk-info-default h2 {
+	border-bottom: 1px solid #2d2d2d;
+}
+
+.junk-info-default h2:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.junk-info-inverted h2 {
+	border-bottom: 1px solid #fff;
+}
+
+.junk-info-inverted h2:hover {
+	border-bottom: 1px solid #2d2d2d;
 }
 
 .junk-info a {
@@ -69,11 +90,12 @@ body.no-cursor {
 }
 
 .junk-info-inverted a {
-	color: #1c1c1c;
+	color: #2d2d2d;
 }
 
 .junk-info ul {
-	margin-top: 10px;
+	margin: 10px 0 0 0;
+	padding: 0;
 }
 
 .junk-info ul li {
@@ -81,52 +103,71 @@ body.no-cursor {
 }
 
 .junk-info ul li a {
-	padding:0 20px 0 0;
+	padding: 0;
+	margin-right: 20px;
+}
+
+.junk-info-default ul li a {
+	border-bottom: 1px solid #2d2d2d;
+}
+
+.junk-info-default ul li a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.junk-info-inverted ul li a {
+	border-bottom: 1px solid #fff;
+}
+
+.junk-info-inverted ul li a:hover {
+	border-bottom: 1px solid #2d2d2d;
 }
 
 .code-close {
 	position:fixed;
 	top: 22px;
-	left: 22px;
+	right: 32px;
 	padding: 10px;
 	display:none;
 	cursor: pointer;
 }
 
 .code-close-default {
-	background: #1c1c1c;
+	background: #2d2d2d;
 	color: #fff;
 }
 
 .code-close-inverted {
 	background: #fff;
-	color: #1c1c1c;
+	color: #2d2d2d;
 }
 
 .code {
-	font-family: 'Roboto Mono';
-	font-size: 1em;
+	font-family: Consolas, Menlo, "Noto Mono", "DejaVu Sans Mono", monospace;
+	font-size: 13px;
 	position: fixed;
-	padding: 40px 20px 20px 20px;
-	top: 20px;
-	left: 20px;
-	width: calc( 100% - 100px );
-	height: calc( 100% - 120px );
-	max-height: calc( 100% - 120px );
+	padding: 140px 20px 20px 20px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
 	overflow: scroll;
 	white-space: pre;
 	word-wrap: normal;
 	overflow-x: scroll;
+    resize: none;
+    box-sizing: border-box;
 }
 
 .code-default {
 	background: #fff;
-	color: #1c1c1c;
-	border: 10px solid #1c1c1c;
+	color: #2d2d2d;
+	border: 10px solid #2d2d2d;
 }
 
 .code-inverted {
-	background: #1c1c1c;
+	background: #2d2d2d;
 	color: #fff;
 	border: 10px solid #fff;
 }
