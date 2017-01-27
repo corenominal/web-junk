@@ -131,3 +131,13 @@ body.no-cursor {
 	outline-color: transparent;
 	outline-style: none;
 }
+
+.code::selection {
+  background: #2d2d2d;
+  color: #fff;
+}
+
+.code::-moz-selection {
+  background: #2d2d2d;
+  color: #fff;
+}
