@@ -26,7 +26,7 @@ $(document).ready(function()
 	var cycles = 0;
 
 	// Initial fill
-	c.fillStyle = 'rgba( 45, 45, 45, 1 )';
+	c.fillStyle = 'rgba( 20, 20, 20, 1 )';
 	c.fillRect( 0, 0, canvasWidth, canvasHeight );
 
 	function particle()

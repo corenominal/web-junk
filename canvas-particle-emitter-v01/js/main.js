@@ -74,7 +74,7 @@ $(document).ready(function()
 
 		for (i = 0; i < particles.length; i++)
 		{
-			c.fillStyle = 'rgba(33,33,33, 1)';
+			c.fillStyle = 'rgba(20,20,20, 1)';
 			c.fillRect(particles[i].x,particles[i].y,particles[i].size,particles[i].size);
 		}
 	}

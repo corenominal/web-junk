@@ -86,11 +86,11 @@ $(document).ready(function()
 			c.beginPath();
 
 			c.shadowBlur = 150;
-			c.shadowColor = 'rgba( 33, 33, 33, 0.8 )';
+			c.shadowColor = 'rgba( 20, 20, 20, 0.8 )';
 
 			var grd=c.createRadialGradient( particles[i].x, particles[i].y, 1, particles[i].x, particles[i].y, particles[i].size / 2.2);
-			grd.addColorStop( 0, 'rgba( 33, 33, 33, 1 )' );
-			grd.addColorStop( 1, 'rgba( 33, 33, 33, 0 )' );			
+			grd.addColorStop( 0, 'rgba( 20, 20, 20, 1 )' );
+			grd.addColorStop( 1, 'rgba( 20, 20, 20, 0 )' );			
 
 			c.fillStyle = grd;
 			c.arc( particles[i].x, particles[i].y, particles[i].size / 2, 0, 2*PI );

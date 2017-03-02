@@ -26,7 +26,7 @@ $(document).ready(function()
 	var maxParticleSize = 5;
 
 	// Initial fill
-	c.fillStyle = 'rgba( 33, 33, 33, 1 )';
+	c.fillStyle = 'rgba( 20, 20, 20, 1 )';
 	c.fillRect( 0, 0, canvasWidth, canvasHeight );
 
 	function particle()
@@ -80,7 +80,7 @@ $(document).ready(function()
 
 	function renderer()
 	{
-		c.fillStyle = 'rgba( 33, 33, 33, 0.4 )';
+		c.fillStyle = 'rgba( 20, 20, 20, 0.4 )';
 		c.fillRect( 0, 0, canvasWidth, canvasHeight );
 
 		for (i = 0; i < particles.length; i++)

@@ -26,7 +26,7 @@ $(document).ready(function()
 	var noOfStars = 80;
 
 	// Initial fill
-	c.fillStyle = 'rgba( 33, 33, 33, 1 )';
+	c.fillStyle = 'rgba( 20, 20, 20, 1 )';
 	c.fillRect( 0, 0, canvasWidth, canvasHeight );
 
 	// Images
@@ -87,7 +87,7 @@ $(document).ready(function()
 	function renderer()
 	{
 		// Clear the canvas
-		c.fillStyle = 'rgba( 33, 33, 33, 1 )';
+		c.fillStyle = 'rgba( 20, 20, 20, 1 )';
 		c.fillRect( 0, 0, canvasWidth, canvasHeight );
 
 		// Draw stars
