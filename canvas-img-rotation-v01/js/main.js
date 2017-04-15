@@ -23,7 +23,7 @@ $(document).ready(function()
 		var c = canvas.getContext('2d');
 
 		// Initial fill
-		c.fillStyle = 'rgba( 20, 20, 20, 1 )';
+		c.fillStyle = 'rgba( 30, 35, 45, 1 )';
 		c.fillRect( 0, 0, w, h );
 
 		// The Image
@@ -48,7 +48,7 @@ $(document).ready(function()
 		function renderer()
 		{
 			// Clear the canvas
-			c.fillStyle = 'rgba( 20, 20, 20, 1 )';
+			c.fillStyle = 'rgba( 30, 35, 45, 1 )';
 			c.fillRect( 0, 0, w, h );
 
 			// Finish the animation

@@ -33,7 +33,7 @@ body.no-cursor {
 }
 
 .junk-page-inverted {
-	background: #141414;
+	background: #1e232d;
 }
 
 .junk-info {
@@ -42,7 +42,7 @@ body.no-cursor {
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	background: #141414;
+	background: #1e232d;
 	color: #fff;
 }
 
@@ -58,7 +58,7 @@ body.no-cursor {
 	font-weight: normal;
 	margin: 10px 40px 4px 0px;
 	display: inline-block;
-	border-bottom: 1px solid #141414;
+	border-bottom: 1px solid #1e232d;
 }
 
 .junk-info h2:hover {
@@ -83,7 +83,7 @@ body.no-cursor {
 .junk-info ul li a {
 	padding: 0;
 	margin-right: 20px;
-	border-bottom: 1px solid #141414;
+	border-bottom: 1px solid #1e232d;
 }
 
 .junk-info ul li a:hover {
@@ -97,7 +97,7 @@ body.no-cursor {
 	padding: 10px;
 	display:none;
 	cursor: pointer;
-	background: #141414;
+	background: #1e232d;
 	color: #fff;
 }
 
@@ -118,7 +118,7 @@ body.no-cursor {
     resize: none;
     box-sizing: border-box;
     background: #fff;
-	color: #141414;
+	color: #1e232d;
 }
 
 .code:focus {
@@ -127,11 +127,11 @@ body.no-cursor {
 }
 
 .code::selection {
-  background: #141414;
+  background: #1e232d;
   color: #fff;
 }
 
 .code::-moz-selection {
-  background: #141414;
+  background: #1e232d;
   color: #fff;
 }

@@ -41,7 +41,7 @@ $(document).ready(function()
 			vy = Math.random() * 6 - 12,
 			energy = vy / 1.2,
 			size = particleSize,
-			colour = 'rgba( 20, 20, 20, 0.' + Math.floor((Math.random() * 5) + 3) + ' )',
+			colour = 'rgba( 30, 35, 45, 0.' + Math.floor((Math.random() * 5) + 3) + ' )',
 			life = 0,
 			death = Math.random() * 300 + 10;
 
@@ -97,7 +97,7 @@ $(document).ready(function()
 			c.fillStyle = particles[i].colour;
 			if( particles[i].life < 2 )
 			{
-				c.fillStyle = 'rgba( 20, 20, 20, 0 )';
+				c.fillStyle = 'rgba( 30, 35, 45, 0 )';
 			}
 			c.beginPath();
 			c.arc( particles[i].x, particles[i].y, particles[i].size / 2, 0, 2*PI );
