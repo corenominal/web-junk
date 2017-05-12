@@ -14,7 +14,7 @@ html {
 }
 
 body {
-	background: #1e232d;
+	background: #000;
 }
 
 .container-canvas {
@@ -27,7 +27,7 @@ body {
 	top: 0;
 	left: 0;
 	color:#fff;
-	background: #1e232d;
+	background: #000;
 	display: table;
 	width: 100%;
 	height: 100%;

@@ -39,7 +39,7 @@ $(document).ready(function()
 			c.beginPath();
 			// c.arc(x position, y position, radius, start angle, end angle, counterclockwise);
 			c.arc( canvasWidth / 2, canvasHeight / 2, radius * i, 0, 2 * PI, false );
-			c.strokeStyle="#1e232d";
+			c.strokeStyle="#000000";
 			c.lineWidth=4;
 			c.stroke();
 		}

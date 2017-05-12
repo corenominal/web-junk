@@ -33,7 +33,7 @@ body.no-cursor {
 }
 
 .junk-page-inverted {
-	background: #1e232d;
+	background: #000;
 }
 
 .junk-info {
@@ -42,8 +42,8 @@ body.no-cursor {
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	background: #1e232d;
-	color: #fff;
+	background: #fff;
+	color: #000;
 }
 
 .junk-info .corenominal {
@@ -58,16 +58,16 @@ body.no-cursor {
 	font-weight: normal;
 	margin: 10px 40px 4px 0px;
 	display: inline-block;
-	border-bottom: 1px solid #1e232d;
+	border-bottom: 1px solid #fff;
 }
 
 .junk-info h2:hover {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #000;
 }
 
 .junk-info a {
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
 
 .junk-info ul {
@@ -83,11 +83,11 @@ body.no-cursor {
 .junk-info ul li a {
 	padding: 0;
 	margin-right: 20px;
-	border-bottom: 1px solid #1e232d;
+	border-bottom: 1px solid #fff;
 }
 
 .junk-info ul li a:hover {
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #000;
 }
 
 .code-close {
@@ -97,7 +97,7 @@ body.no-cursor {
 	padding: 10px;
 	display:none;
 	cursor: pointer;
-	background: #1e232d;
+	background: #000;
 	color: #fff;
 }
 
@@ -118,7 +118,7 @@ body.no-cursor {
     resize: none;
     box-sizing: border-box;
     background: #fff;
-	color: #1e232d;
+	color: #000;
 }
 
 .code:focus {
@@ -127,11 +127,11 @@ body.no-cursor {
 }
 
 .code::selection {
-  background: #1e232d;
+  background: #000;
   color: #fff;
 }
 
 .code::-moz-selection {
-  background: #1e232d;
+  background: #000;
   color: #fff;
 }
