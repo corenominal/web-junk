@@ -16,11 +16,11 @@
     display: grid;
     grid-gap: 10px;
     justify-content: center;
-	
+
     grid-template-columns: 90%;
     grid-template-rows: 100px auto 100px;
-	
-	
+
+
     grid-template-areas: "header"
                          "main"
                          "aside"
