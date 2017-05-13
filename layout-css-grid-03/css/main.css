@@ -8,11 +8,6 @@
  * by @corenominal
  * More info: https://github.com/corenominal/web-junk 
  */
-.block {
-    background: #000;
-    color: #fff;
-    padding: 20px;
-}
 
 .container-grid {
     margin-top: 100px;
@@ -101,6 +96,12 @@
 /**
  * Non grid related stuff
  */
+.block {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+}
+
 h1 {
     font-size: 100%;
     font-weight: normal;
