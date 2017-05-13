@@ -38,7 +38,7 @@ $(document).ready(function()
 			vx = Math.random() * 10 - 5,
 			vy = Math.random() * 10 - 5,
 			size = Math.floor( ( Math.random() * maxParticleSize ) + 1 ),
-			colour = 'rgba( 30, 35, 45, 0.' + Math.floor((Math.random() * 5) + 3) + ' )',
+			colour = 'rgba( 0, 0, 0, 0.' + Math.floor((Math.random() * 5) + 3) + ' )',
 			life = 0,
 			death = Math.random() * 500 + 10;
 
@@ -87,11 +87,11 @@ $(document).ready(function()
 		{
 			if( particles[i].life < 50 )
 			{
-				c.fillStyle = 'rgba( 30, 35, 45, 0 )';
+				c.fillStyle = 'rgba( 0, 0, 0, 0 )';
 			}
 			else
 			{
-				c.fillStyle = 'rgba( 30, 35, 45, 0.' + Math.floor((Math.random() * 5) + 3) + ' )';
+				c.fillStyle = 'rgba( 0, 0, 0, 0.' + Math.floor((Math.random() * 5) + 3) + ' )';
 			}
 			c.fillRect(particles[i].x,particles[i].y,particles[i].size,particles[i].size);
 		}

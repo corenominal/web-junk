@@ -39,7 +39,7 @@ $(document).ready(function()
 			vx = Math.random() * 10 - 5,
 			vy = Math.random() * 10 - 5,
 			size = Math.floor( ( Math.random() * maxParticleSize ) + 2 ),
-			colour = 'rgba( 30, 35, 45, 0.' + Math.floor((Math.random() * 5) + 3) + ' )',
+			colour = 'rgba( 0, 0, 0, 0.' + Math.floor((Math.random() * 5) + 3) + ' )',
 			life = 0,
 			death = Math.random() * 500 + 10;
 

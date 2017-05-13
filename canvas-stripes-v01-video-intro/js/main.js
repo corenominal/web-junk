@@ -29,7 +29,7 @@ $(document).ready(function()
 		var canvas = document.getElementById( 'stripywipycanvas' );
 		var c = canvas.getContext('2d');
 		// Initial fill
-		c.fillStyle = 'rgba( 30, 35, 45, 1 )';
+		c.fillStyle = 'rgba( 0, 0, 0, 1 )';
 		c.fillRect(0,0,w,h);
 		// Vars
 		var x = 0;

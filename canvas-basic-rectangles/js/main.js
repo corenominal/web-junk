@@ -37,7 +37,7 @@ $(document).ready(function()
 			x = (canvasWidth / 2) - ((size * i) / 2);
 			y = (canvasHeight / 2) - ((size * i) / 2);
 
-			c.strokeStyle="#1e232d";
+			c.strokeStyle="#000000";
 			c.lineWidth=4;
 			//c.strokeRect( x position, y position, width, height );
 			c.strokeRect( x, y, size * i, size * i );
