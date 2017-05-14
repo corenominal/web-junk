@@ -9,4 +9,17 @@
  * More info: https://github.com/corenominal/web-junk 
  */
 
-// Nope, nothing 'ere!
+$(document).ready(function()
+{
+
+    $( document ).on( 'click', '.add-text', function( e )
+    {
+        e.preventDefault();
+        
+        var el = $( this ).parent();
+
+        el.append( '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed finibus tellus. Fusce quis est lectus. Ut egestas arcu nisi, sed porta ante lacinia eget. Donec volutpat massa vitae nisl commodo accumsan. Mauris euismod lorem egestas iaculis pellentesque. Quisque vestibulum velit nunc, tristique consequat diam interdum consequat. Duis dapibus, libero sit amet pulvinar eleifend, ante felis vestibulum mauris, fringilla varius leo nulla a metus. Nunc egestas, lectus et interdum blandit, nisl lacus interdum sem, ut ullamcorper ligula lectus eu nisl. Aliquam volutpat arcu justo. Nam mattis varius nulla a malesuada. Nunc tempor ut tortor non dignissim. Aliquam erat volutpat. Pellentesque egestas maximus facilisis. Nam molestie purus tortor, at consectetur sapien mollis quis. Vivamus odio tortor, tempor non nulla in, auctor iaculis neque.</p>' );
+
+    });
+
+});
